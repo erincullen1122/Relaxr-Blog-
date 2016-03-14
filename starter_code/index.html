@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,300italic,800' rel='stylesheet' type='text/css'>
 		<style type="text/css">a {text-decoration: none}</style>
+
+
 	</head>
 	
 	<body>
@@ -25,7 +27,7 @@
 					<a href="http://slipsum.com/" target="0">FAQ</a>
 					<a href="http://slipsum.com/" target="0">Team</a>
 					<a href="http://slipsum.com/" target="0">Contact Us</a>
-					<a href="http://slipsum.com/" target="0">Blog</a>
+					<a href="../starter_code/index.html" target="0">Blog</a>
 				</nav>
 				</div><!-- end div wrapper -->
 			</header>
@@ -61,17 +63,18 @@
 					</div></article>
 				</div>
 					
-			<!-- SIDEBAR CONTENT: CATEGORIES-->
+			<!-- SIDEBAR CONTENT: CATEGORIES-->	
 					<!-- SIDEBAR CONTENT: CATEGORIES-->
 					<aside>
 						<div class="catnav">
 							<h3>Categories</h3>
 							<ul>
-							<li>Sucess Stories</li>
-							<li>Stats</li>
-							<li>How Tos</li>
-							<li>Best Of</li>
-							<li>Business Tips</li>
+							<li><a href="http://slipsum.com/" target="0">Sucess Stories
+							</a></li>
+							<li><a href="http://slipsum.com/" target="0">Stats</a></li>
+							<li><a href="http://slipsum.com/" target="0">How Tos</a></li>
+							<li><a href="http://slipsum.com/" target="0">Best Of</a></li>
+							<li><a href="http://slipsum.com/" target="0">Business Tips</a></li>
 						</div>
 						<!-- SIDEBAR CONTENT: ABOUT-->
 						<div class="about">
@@ -91,7 +94,17 @@
 			<footer>
 				<div class="wrapper clearfix">
 					<div class="signup">
-					<div class="button-cta">Sign Up Now!
+					<div class="button-cta">
+						<!-- SCRIPT--source: http://stackoverflow.com/questions/10607847/how-does-inline-javascript-in-html-work-->
+						<a onclick="alert('Tihs page does not exist....YET!');" id="click_me">Sign Up Now!</a>
+						<script type="text/javascript">
+						document.getElementById('click_me').addEventListener("click", function(event) {
+   						(function(event) {
+       					 alert(this);
+    					}).call(document.getElementById('click_me'), event);
+						});
+						</script>
+						<!-- SCRIPT-->
 					</div>
 					</div>
 					<h1 class="footer-logo">Relaxr</h1>
@@ -104,6 +117,9 @@
 					</div>
 				</div>
 			</footer>
+
+
+
 				<!-- end div wrapper -->
 			</div>
 
